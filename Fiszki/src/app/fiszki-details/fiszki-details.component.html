@@ -1,0 +1,26 @@
+
+<div class="wrapper">
+  <div class="container">
+    <div class="content shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+        <h3>{{fiszka.name}}</h3>
+        <p>{{fiszka.desc}}</p>
+        <p><b>Autor: </b>{{fiszka.author}}</p>
+    </div>
+    <div class="buttons">
+        <div (click)="onLern()" class="buttons-left shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+            <p>Rozpocznij Naukę</p>
+            <img class="icon" src="assets/start.png" alt="">
+        </div>
+        <div (click)="onRandom()" class="buttons-right shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+            <p>Losuj Wyrażenie</p>
+            <img class="icon" src="assets/dices.png" alt="">
+        </div>
+    </div>
+    <div class="word-list  shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+        <h4>Lista zwrotów:</h4>
+        <ol>
+            <li *ngFor="let word of fiszka.cards" ><p>{{word.word}} - {{word.definition}}</p></li>
+        </ol>
+    </div>
+</div>
+</div>

@@ -1,0 +1,63 @@
+
+.img-bg{
+    position: fixed;
+    top: 50px;
+    z-index: -1;
+}
+
+.wrapper{
+    padding: 50px;
+    width: 100vw;
+    background-image: url(../../assets/wave3.svg);
+    background-attachment: fixed;
+    background-position: 0 50%;
+}
+.container{
+    padding-top: 15vh;
+}
+.content{
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    margin: 25px;
+   
+}
+.content p{
+    margin: 20px 0 20px 0 ;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+.buttons-left{
+    width: 50%;
+    background-color: rgba(35, 231, 74, 0.9) !important;
+    display: flex;
+    margin: 5px;
+}
+.buttons-left p{
+    color: white;
+    margin: 0 auto;
+    font-size: 15px;
+    font-weight: bold;
+}
+.buttons-right{
+    width: 50%;
+    background-color: rgba(34, 204, 246, 0.9) !important;
+    display: flex;
+    margin: 5px;
+}
+.buttons-right p{
+    color: white;
+    margin: 0 auto;
+    font-size: 15px;
+    font-weight: bold;
+}
+img.icon{
+    height: 30px;
+    margin: 5px;
+}
+.word-list{
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    margin: 25px,25px,0,25px;
+}

@@ -1,0 +1,91 @@
+
+.wrapper{
+    background-image: url(../../assets/wave4.svg);
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    padding-top: 20vh;
+}
+.word-card{
+margin: 20px;
+height: 250px;
+text-align: center;
+}
+.word-card h4{
+    line-height: 200px;
+
+}
+.buttons{
+    margin-top: 20px;
+    justify-content: space-around;
+    display: flex;
+}
+.buttons-button{
+    color: white !important;
+    font-weight: bold;
+}
+.ok{
+    background-color: rgba(34, 225, 34, 0.9) !important  ;
+}
+.not{
+    background-color: rgba(225, 0, 0, 0.9) !important;
+}
+.stats{
+    display: flex;
+    justify-content: space-around;
+}
+.incorrect{
+    color:red;
+    font-weight: bold;
+}
+.correct{
+    color: green;
+    font-weight: bold;
+}
+.win-box{
+    position: fixed;
+    top: 20vh;
+    width: 98vw;
+    height: 40vh;
+    min-height: 425px;
+    left: 50%;
+    margin-left: -49vw;
+    text-align: center;
+}
+.buttons{
+    margin-top: 50px !important ;
+    display: flex;
+}
+.buttons-left{
+    width: 50%;
+    background-color: rgba(35, 231, 74, 0.9) !important;
+    display: flex;
+    margin:25px;
+}
+.buttons-left p{
+    color: white;
+    margin: 0 auto;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.buttons-right{
+    width:50%;
+    background-color: rgba(34, 204, 246, 0.9) !important;
+    display: flex;
+    margin: 25px;
+    align-items: center;
+}
+.buttons-right p{
+    color: white;
+    margin: 0 auto;
+    font-size: 15px;
+    font-weight: bold;
+}
+img.icon{
+    height: 30px;
+    margin: 10px;
+}

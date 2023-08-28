@@ -1,0 +1,23 @@
+.wrapper{
+    background-image: url(../../assets/Sprinkle.svg);
+    height: 100vh;
+    width: 100vw;
+}
+p{
+    font-weight: bold;
+}
+.container{
+    padding-top: 20vh;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+.button-left{
+background-color: rgb(156, 202, 20) !important;
+color: white !important;
+}
+.button-right{
+background-color: indianred !important;
+color: white !important;
+}

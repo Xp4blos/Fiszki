@@ -1,0 +1,21 @@
+<div class="wrapper">
+    <div class="container">
+        <div class="content shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+            <h2>Przetłumacz</h2>
+            <h4>{{word.word}}</h4>
+        </div>
+        <div class="form form-group">
+            <input class="form-control" placeholder="Tłumaczenie..." name="answer" type="text" (input)="onInput($event)">
+        </div>
+        <div class="buttons">
+            <div (click)="onBack()" class="buttons-left shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+                <p>Powrót</p>
+                <img src="assets/back.png" alt="" class="icon"> 
+            </div>
+            <div (click)="onChangeMode()" class="buttons-right shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+                <p>Zmień tłumaczenie z definicją</p>
+                <img src="assets/change.png" alt="" class="icon">   
+            </div>
+        </div>
+    </div>
+</div>

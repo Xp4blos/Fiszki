@@ -1,0 +1,59 @@
+<div class="wrapper">
+<img class="waves" src="../../../assets/waveaddtop.svg" alt="">
+    <div class="container">
+        <form #f="ngForm" (submit)="onSubmit(f)" id="ngForm">
+        <div class="content shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+                <div class="form-group">
+                    <h4>Nazwa:</h4>
+                    <input class="form-control" type="text" name="name" ngModel required>
+                </div>
+                <div class="form-group">
+                    <h6>Opis:</h6>
+                    <input class="form-control" type="text" name="desc" ngModel required>
+                </div>
+        </div>
+    </form>
+        <div class="info-box shadow-lg mb-3 rounded">
+            <div class="row">
+                <div class="col-6">
+                   <p>Wyrażenie</p>
+                </div>
+                <div class="col-6">
+                    <p>Definicja</p>
+                </div>
+            </div>
+        </div>
+
+        <div *ngFor="let card of newCards; let i = index" class="card shadow-lg p-3 mb-3 bg-body-tertiary rounded">
+            <div class="row">
+                <div class="col-5">
+                    <input class="form-control" type="text" [(ngModel)]="card.word" name="name">
+                </div>
+                <div class="col-5">
+                    <input class="form-control" type="text" [(ngModel)]="card.definition" name="desc">
+                </div>
+                    <div class="col-1">
+                        <button  type="button" class="btn btn-danger">X</button>
+                    </div>
+            </div>
+        </div>
+
+        <div class="card shadow-lg p-3 mb-3 bg-body-tertiary rounded">
+            <div class="row">
+                <div class="col-6">
+                    <input class="form-control" type="text" [(ngModel)]="newCardWord" name="name">
+                </div>
+                <div class="col-6">
+                    <input class="form-control" type="text" [(ngModel)]="newCardDefinition" name="desc">
+                </div>
+            </div>
+        </div>
+
+        <button (click)="onAddCard()" type="button" class="add-card btn btn-info">Dodaj Wyrażenie</button>
+        <div class="control-buttons btn-group">
+            <button form="ngForm" type="submit" class="btn btn-zapisz" [disabled]="!f.valid">Zapisz</button>
+            <button (click)="onCancel()" type="button" class="btn btn-danger">Anuluj</button>
+        </div>
+   
+    </div>
+</div>

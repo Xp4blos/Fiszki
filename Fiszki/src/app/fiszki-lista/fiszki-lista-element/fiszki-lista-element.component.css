@@ -1,0 +1,21 @@
+.fiszka-list-element{
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #F5ECE6;
+    max-width: 600px;
+
+}
+.header{
+
+    padding: 5px;
+}
+.content{
+    padding: 10px;
+    display: flex;
+}
+.left{
+    width: 80%
+}
+.right{
+    width: 20%;
+}

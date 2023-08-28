@@ -1,0 +1,10 @@
+nav{
+    background-color: #1c9ffa !important;
+    position: fixed;
+    width: 100vw;
+    top: 0
+  
+}
+nav div h2{
+    color: white !important;
+}

@@ -1,0 +1,20 @@
+.nav{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    justify-content: space-around;
+    align-items: center;
+    background-color: deepskyblue !important;
+    padding: 0 !important;
+    margin-left: 5vw;
+    margin-bottom: 12px !important;
+    width: 90vw;
+    height: 44px !important;
+}
+
+.menu-icon{
+    width: 25px;
+}
+.menu-icon--home{
+    width: 40px;
+}

@@ -1,0 +1,33 @@
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../../assets/wave2.svg);
+}
+.container{
+    padding-top: 20vh;
+}
+.left,.right{
+    display: flex;
+    color: white;
+    align-items: center;
+    font-weight: bold;
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+.left{
+width: 40%;
+background-color:rgb(215, 113, 255) !important;
+}
+.right{
+width: 60%;
+background-color: tomato !important;
+}
+.btn-icon{
+    height: 40px;
+    margin: 10px 15px 5px 15px;
+}

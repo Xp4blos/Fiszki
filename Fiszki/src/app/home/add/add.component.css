@@ -1,0 +1,37 @@
+.waves{
+    position: fixed;
+    top: 52px;
+    z-index: 1;
+}
+.container{
+    padding-top: 15vh;
+    padding-bottom: 150px;
+}
+.info-box, .content{
+    border: solid 1px lightgray;
+}
+.info-box .row{
+    margin: 0 !important;
+}
+.info-box .row div{
+    text-align: center;
+}
+.info-box .row .col-6 p{
+    padding-top: 15px;
+}
+.add-card{
+    color: white !important;
+    font-weight: bold;
+    width: 100%;
+}
+.control-buttons{
+    width: 100%;
+    margin-top: 20px;
+}
+.control-buttons .btn{
+    font-weight: bold;
+    padding: 10px;
+}
+.btn-zapisz{
+    background-color: lime;
+}
